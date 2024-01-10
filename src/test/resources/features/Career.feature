@@ -1,8 +1,8 @@
 @Career
 Feature: Career
+  As a User i want to career page
 
   @Negative
-  As a User i want to career page
   Scenario: User apply job without fill birth date field
     Given user is on the landing page
     When user clicks the Career button menu
@@ -25,6 +25,7 @@ Feature: Career
     Given user is on the landing page
     When user clicks the Career button menu
     And user clicks the Apply Job on selected job
+    And user click the Apply Now on job page
     When user input "Full name" as a name, "Email Address" as a email, "Phone" as a phone, "Current Company" as a Current Company, "University Education" as a University,"Birth Place" as a birth place, "Current Address" as a current address, "About" as a about
     And user select Gender option in Gender dropdown menu
     And user select Last Education option in Last Education dropdown menu
